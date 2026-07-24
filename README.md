@@ -1,23 +1,29 @@
 # Codex Auto Test
 
-这是一个用于测试 Codex 自动写入和提交代码的最小 Python 项目。
+这是一个用于测试 Codex 自动修改和提交代码的最小 Python 项目。
 
 ## 功能
 
-支持两个数字的加法和减法。
+统计一段文本中的字符数、非空字符数和单词数，同时支持直接输入文本或读取文本文件。
 
-## 运行
+## 直接统计文本
 
 ```bash
-python calculator.py add 3 2
-python calculator.py subtract 3 2
+python text_counter.py "Hello Codex"
 ```
 
 预期输出：
 
 ```text
-5
-1
+字符数: 11
+非空字符数: 10
+单词数: 2
+```
+
+## 统计文件
+
+```bash
+python text_counter.py --file README.md
 ```
 
 ## 测试
